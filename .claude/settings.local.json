@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./setup.sh *)",
+      "Bash(npm search *Fix the dependency error now.\rThe package @conflux-js/conflux does not exist.\rFor Conflux eSpace projects, we should use standard Hardhat + ethers.js instead of js-conflux-sdk \\(which is mainly for Core Space\\).\rPlease immediately update both package.json files:\r\rRoot package.json：删除或替换 @conflux-js/conflux 为正确的依赖（如果需要的话只保留 hardhat、@nomicfoundation/hardhat-toolbox、dotenv、@openzeppelin/contracts 等）。\ragents/package.json：同样清理不必要的 conflux 依赖。\r\r然后重新运行：\rBashcd conflux-milestone-escrow\rnpm install\rcd agents && npm install && cd ..\r输出完整的修复结果和 npm install 的成功信息。)",
+      "Bash(nano .env *)",
+      "Bash(npm run *)",
+      "Bash(npm start *)"
+    ]
+  }
+}
